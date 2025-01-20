@@ -19,3 +19,27 @@ function App() {
 }
 
 export default App
+
+
+// import { Layout } from 'antd';
+// import React from 'react';
+// import '@styles/index.scss';
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import Router from './router/index';
+// const router = createBrowserRouter(Router);
+// const searchParams = new URLSearchParams(location.search);
+// const ticket = searchParams.get('ticket');
+// if (ticket) {
+//   localStorage.setItem('ticket', ticket);
+//   location.replace(`${location.origin}${location.pathname}`);
+// }
+
+// const App = () => (
+//     <Layout>
+//       <Layout>
+//         <RouterProvider router={router} />
+//       </Layout>
+//     </Layout>
+// );
+// export default App;
+

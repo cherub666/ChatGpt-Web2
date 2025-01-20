@@ -35,3 +35,24 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     </AuthRouter>
   </BrowserRouter>
 )
+
+
+// import React from 'react';
+// import { Provider } from 'react-redux';
+// import ReactDOM from 'react-dom/client';
+// import 'tdesign-react/es/style/index.css';
+// import '@src/styles/theme.css';
+// import './index.less';
+// import { BrowserRouter } from 'react-router-dom';
+// import App from '@src/layout/index';
+// import store from '@src/store/index';
+
+
+// ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode>
+//   <Provider store={store}>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </Provider>
+// </React.StrictMode>);
+

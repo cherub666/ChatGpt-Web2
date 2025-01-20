@@ -378,3 +378,56 @@ export function searchRouteDetail(path: string, routes: RouteOptions[]): RouteOp
 }
 
 export default {}
+
+
+// import * as React from 'react';
+// import { lazy, Suspense } from 'react';
+// import Loading from '@components/Loading';
+// const HomePage = lazy(() => import('@routes/HomePage'));
+// const Console = lazy(() => import('@routes/Console'));
+// const ConsoleData = lazy(() => import('@routes/ConsoleManagement/ConsoleData/ConsoleData'));
+// const ConsoleDataDetail = lazy(() => import('@routes/ConsoleManagement/ConsoleData/ConsoleDataDetail'));
+// const ConsoleDataRealTime = lazy(() => import('@routes/ConsoleManagement/ConsoleData/ConsoleDataRealTime'));
+// const ConsoleProjects = lazy(() => import('@routes/ConsoleManagement/ConsoleProjects'));
+// const ConsoleMonitors = lazy(() => import('@routes/ConsoleManagement/ConsoleMonitors'));
+// const ConsoleAlert = lazy(() => import('@routes/ConsoleAlert/ConsoleAlert'));
+// const ConsoleAlertLog = lazy(() => import('@routes/ConsoleAlert/ConsoleAlertLog'));
+// const ConsoleScheduler = lazy(() => import('@routes/ConsoleScheduler/ConsoleScheduler'));
+// const ConsoleSchedulerLog = lazy(() => import('@routes/ConsoleScheduler/ConsoleSchedulerLog'));
+
+// // 实现懒加载的用Suspense包裹 定义函数
+// const lazyLoad = children => <Suspense fallback={<Loading></Loading>}>
+//     {children}
+//   </Suspense>;
+
+// const routes = [
+//   {
+//     path: '/',
+//     element: <HomePage/>,
+//   },
+//   { path: '/home', element: <HomePage/> },
+//   {
+//     path: '/console', element: lazyLoad(<Console/>),
+//     children: [
+//       {
+//         path: 'data',
+//         element: lazyLoad(<ConsoleData />),
+//       },
+//       {
+//         path: 'data-detail',
+//         element: lazyLoad(<ConsoleDataDetail />),
+//       },
+//       {
+//         path: 'data-detail-real-time',
+//         element: lazyLoad(<ConsoleDataRealTime />),
+//       },
+//       {
+//         path: 'projects',
+//         element: lazyLoad(<ConsoleProjects />),
+//       },
+//       {
+//         path: 'monitors',
+//         element: lazyLoad(<ConsoleMonitors />),
+//       },
+//     ],
+//   },
